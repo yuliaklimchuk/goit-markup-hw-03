@@ -1,0 +1,196 @@
+:root
+{
+    --primary-text-color: #212121;
+    --secondary-text-color: #2196F3;
+    --third-text-color: #757575;
+}
+
+body
+{
+    font-family: 'roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.link
+{
+    text-decoration: none;
+}
+.list
+{
+    list-style: none;
+}
+/*--------------Header-------------*/
+.logo-link
+{
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo-first
+{
+    color: var(--secondary-text-color);
+}
+.logo-second
+{
+    color: #000000;
+}
+.header-list-link
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit
+}
+.header-list-link:hover,
+.header-list-link:focus
+{
+    color: var(--secondary-text-color)
+}
+.header-link
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+}
+.header-link:hover,
+.header-link:focus
+{
+    color: var(--secondary-text-color);
+}
+
+.title
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit
+}
+/*--------------Hero-------------*/
+.hero
+{
+    background-color: var(--third-text-color);
+}
+.hero-title
+{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero-btn
+{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/*--------------Benefits-------------*/
+.benefits-item-title
+{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: inherit
+}
+.benefits-item-text
+{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--third-text-color);
+}
+
+/*--------------Team-------------*/
+
+.team-item-title
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit
+}
+.team-item-text
+{
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--third-text-color);
+}
+
+/*--------------Footer-------------*/
+.footer-list
+{
+    background-color: var(--third-text-color);
+}
+.footer-link
+{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+.footer-link-adress
+{
+    color: #FFFFFF;
+}
+.footer-link:hover,
+.footer-link:focus
+{
+    color: var(--secondary-text-color);
+}
+
+
+.portfolio-button-item
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    color: inherit;
+}
+.portfolio-button-item:hover,
+.portfolio-button-item:focus
+{
+    color: #FFFFFF;
+}
+.portfolio-content-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: inherit;
+}
+
+.portfolio-content-text
+{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--third-text-color);
+}
+
