@@ -10,9 +10,18 @@
     box-sizing: border-box;
 }
 
+.visually-hidden 
+{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 img
 {
-    display: block;
+    display:block;
 }
 :root
 {
@@ -46,13 +55,16 @@ body
 .logo-link
 {   
     display: block;
-    margin-right: 163px;
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+.page-header .logo-link
+{
+    margin-right: 163px;
 }
 .logo-first
 {
@@ -140,14 +152,17 @@ body
 /*--------------Hero-------------*/
 .hero
 {
+    padding-top: 200px;
     background-color: #2F303A;
-
     height: 600px;
-    margin-bottom: 94px;
     text-align: center;
 }
 .hero-title
 {
+    max-width: 696px;
+    margin: 0px auto 30px auto;
+    padding-left: 13px;
+    padding-right: 13px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -155,7 +170,6 @@ body
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 30px;
 }
 .hero-btn
 {
@@ -177,13 +191,15 @@ body
 /*--------------Benefits-------------*/
 .benefits
 {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 47px;
 }
 .benefits-list
 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 .benefits-list-item
 {
@@ -213,7 +229,8 @@ body
 /*--------------Works-------------*/
 .works
 {
-    margin-bottom: 94px;
+    padding-top: 47px;
+    padding-bottom: 94px;
 }
 .works-list
 {
@@ -222,12 +239,10 @@ body
 }
 .works-list-item
 {
-    width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
 }
-.works-list-item:not(:last-child)
-{
-    margin-right: 30px;
-}
+
 
 /*--------------Team-------------*/
 .team
@@ -239,15 +254,14 @@ body
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .team-list-item
 {
-    width: 270px;
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
 }
-.team-list-item:not(:last-child)
-{
-    margin-right: 30px;
-}
+
 .team-img
 {
     margin-bottom: 30px;
@@ -305,7 +319,13 @@ body
     color: var(--secondary-text-color);
 }
 
-
+/*--------------Portfolio-------------*/
+.portfolio-buttons-list
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .portfolio-button-item
 {
     font-weight: 500;
