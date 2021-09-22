@@ -47,6 +47,10 @@ body
 
 
 /*--------------Header-------------*/
+.page-header
+{
+    border-bottom: 1px solid #ECECEC;
+}
 .header-container
 {
     display: flex;
@@ -142,6 +146,11 @@ body
     margin-bottom: 50px;
 }
 /*--------------Main-------------*/
+.section
+{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .container
 {
     width: 1200px;
@@ -189,11 +198,7 @@ body
 }
 
 /*--------------Benefits-------------*/
-.benefits
-{
-    padding-top: 94px;
-    padding-bottom: 47px;
-}
+
 .benefits-list
 {
     display: flex;
@@ -229,8 +234,8 @@ body
 /*--------------Works-------------*/
 .works
 {
-    padding-top: 47px;
-    padding-bottom: 94px;
+    padding-top: 0px;
+
 }
 .works-list
 {
@@ -248,7 +253,6 @@ body
 .team
 {
     background-color: #F5F4FA;
-    padding: 94px 215px;
 }
 .team-list
 {
@@ -293,7 +297,7 @@ body
     padding-bottom: 57px;
 }
 
-.logo-link
+.page-footer .logo-link
 {
     margin-bottom: 20px;
 }
@@ -320,14 +324,31 @@ body
 }
 
 /*--------------Portfolio-------------*/
+.portfolio-section
+{
+    padding-top: 43px;
+}
+.rectangle
+{
+    background-color: #c4c4c4;
+    height: 29px;
+    margin-bottom: 22px;
+}
 .portfolio-buttons-list
 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.portfolio-list-button-item:not(:last-child)
+{
+    margin-right: 8px;
+}
 .portfolio-button-item
 {
+    padding: 6px 22px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -340,9 +361,34 @@ body
 .portfolio-button-item:focus
 {
     color: #FFFFFF;
+    background-color: var(--secondary-text-color);
+}
+.portfolio-content-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.portfolio-content-item
+{
+    flex-basis: calc(100% / 3 - 30px);
+}
+.portfolio-content-item:not(:nth-child(3n-2))
+{
+    margin-left: 30px;
+}
+.portfolio-content-item:not(:nth-child(n+7))
+{
+    margin-bottom: 30px;
+}
+.portfolio-description
+{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 .portfolio-content-title
 {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
