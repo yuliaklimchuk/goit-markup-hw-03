@@ -1,3 +1,19 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+img
+{
+    display: block;
+}
 :root
 {
     --primary-text-color: #212121;
@@ -19,9 +35,18 @@ body
 {
     list-style: none;
 }
+
+
 /*--------------Header-------------*/
-.logo-link
+.header-container
 {
+    display: flex;
+    align-items: center;
+}
+.logo-link
+{   
+    display: block;
+    margin-right: 163px;
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -37,27 +62,57 @@ body
 {
     color: #000000;
 }
-.header-list-link
+.header-list
 {
+    display: flex;
+
+}
+.header-list-item:not(:last-child)
+{
+    margin-right: 50px;
+
+}
+.header-navigation
+{
+    display: flex;
+    align-items: center;
+}
+.header-list-link
+{   display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: inherit
+    color: inherit;
+
 }
 .header-list-link:hover,
 .header-list-link:focus
 {
     color: var(--secondary-text-color)
 }
-.header-link
+.header-info-list
 {
+    display: flex;
+    margin-left: auto;
+}
+.info-list-item:not(:last-child)
+{
+    margin-right: 50px;
+
+}
+.header-link
+{   padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--third-text-color);
 }
+
 .header-link:hover,
 .header-link:focus
 {
@@ -71,12 +126,25 @@ body
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: inherit
+    color: inherit;
+    margin-bottom: 50px;
+}
+/*--------------Main-------------*/
+.container
+{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px; 
+    margin: 0 auto;
 }
 /*--------------Hero-------------*/
 .hero
 {
-    background-color: var(--third-text-color);
+    background-color: #2F303A;
+
+    height: 600px;
+    margin-bottom: 94px;
+    text-align: center;
 }
 .hero-title
 {
@@ -87,6 +155,7 @@ body
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 .hero-btn
 {
@@ -98,9 +167,32 @@ body
     color: #FFFFFF;
     font-family: inherit;
     cursor: pointer;
+    padding: 10px 32px;
+    background-color: var(--secondary-text-color);
+    border-radius: 4px;
+    min-width: 200px;
+    text-align: center;
 }
 
 /*--------------Benefits-------------*/
+.benefits
+{
+    margin-bottom: 94px;
+}
+.benefits-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.benefits-list-item
+{
+    width: 270px;
+}
+.benefits-list-item:not(:last-child)
+{
+    margin-right: 30px;
+}
 .benefits-item-title
 {
     font-weight: 700;
@@ -108,7 +200,8 @@ body
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: inherit
+    color: inherit;
+    margin-bottom: 10px;
 }
 .benefits-item-text
 {
@@ -117,11 +210,51 @@ body
     letter-spacing: 0.03em;
     color: var(--third-text-color);
 }
+/*--------------Works-------------*/
+.works
+{
+    margin-bottom: 94px;
+}
+.works-list
+{
+    display: flex;
+    align-items: center;
+}
+.works-list-item
+{
+    width: 370px;
+}
+.works-list-item:not(:last-child)
+{
+    margin-right: 30px;
+}
 
 /*--------------Team-------------*/
-
-.team-item-title
+.team
 {
+    background-color: #F5F4FA;
+    padding: 94px 215px;
+}
+.team-list
+{
+    display: flex;
+    align-items: center;
+}
+.team-list-item
+{
+    width: 270px;
+}
+.team-list-item:not(:last-child)
+{
+    margin-right: 30px;
+}
+.team-img
+{
+    margin-bottom: 30px;
+}
+.team-item-title
+{   
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
@@ -139,9 +272,16 @@ body
 }
 
 /*--------------Footer-------------*/
-.footer-list
+.page-footer
 {
-    background-color: var(--third-text-color);
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 57px;
+}
+
+.logo-link
+{
+    margin-bottom: 20px;
 }
 .footer-link
 {
@@ -150,6 +290,10 @@ body
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+}
+.footer-link:not(:last-child)
+{
+    margin-bottom: 9px;
 }
 .footer-link-adress
 {
