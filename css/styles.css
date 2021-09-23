@@ -68,7 +68,7 @@ body
 }
 .page-header .logo-link
 {
-    margin-right: 163px;
+    margin-right: 93px;
 }
 .logo-first
 {
@@ -241,6 +241,7 @@ body
 {
     display: flex;
     align-items: center;
+    margin-left: -30px;
 }
 .works-list-item
 {
@@ -259,6 +260,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -30px;
 }
 .team-list-item
 {
@@ -301,6 +303,10 @@ body
 {
     margin-bottom: 20px;
 }
+.page-footer .logo-second
+{
+    color: #FFFFFF;
+}
 .footer-link
 {
     font-size: 14px;
@@ -309,10 +315,13 @@ body
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
 }
-.footer-link:not(:last-child)
+
+.footer-link
 {
+    display: block;
     margin-bottom: 9px;
 }
+
 .footer-link-adress
 {
     color: #FFFFFF;
@@ -324,16 +333,7 @@ body
 }
 
 /*--------------Portfolio-------------*/
-.portfolio-section
-{
-    padding-top: 43px;
-}
-.rectangle
-{
-    background-color: #c4c4c4;
-    height: 29px;
-    margin-bottom: 22px;
-}
+
 .portfolio-buttons-list
 {
     display: flex;
